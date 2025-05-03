@@ -1,0 +1,171 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  background: url("dood.jpg");
+  color: #333;
+}
+/* Dark mode */
+body.dark-mode {
+  background: url('bdood.jpg');
+  color: black;
+}
+
+/* Update other elements as needed */
+.top-bar {
+  background-color: #f4f4f4;
+}
+
+body.dark-mode .top-bar {
+  background-color: #555;
+  color:white;
+}
+
+body.dark-mode .about,body.dark-mode .interest,body.dark-mode .contact{
+	background-color:#e4d1d1;
+}
+
+body.dark-mode .education-skills,body.dark-mode .project{
+	background-color:#b0aac0;
+}
+
+.footer-content {
+  background-color: #f4f4f4;
+}
+
+body.dark-mode .footer-content {
+  background-color: #444;
+
+}
+body.dark-mode .footer-item a {
+  color: white;
+  text-decoration: none;
+}
+
+#darkModeToggle {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  padding: 8px 12px;
+  background-color: #204764;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 999;
+}
+
+
+/* Light Mode */
+
+.top-bar {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background-color:#cea591;
+  color: black; 
+  font-size:20px;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+}
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+.profile-info h2 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.student {
+  margin: 5px 0 0;
+  color: black;
+}
+
+
+.about, .education-skills, .project, .stat, .contact{
+  padding: 2rem;
+  background: white;
+  margin: 1rem;
+  border-radius: 8px;
+}
+.interest{
+  padding: 0.4rem;
+  background: white;
+  margin: 1rem;
+  border-radius: 8px;
+}
+.education-skills, .project{
+  background:#d5f4e6;
+}
+.details-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.skills .bar {
+  background: #ccc;
+  height: 8px;
+  border-radius: 4px;
+  margin: 5px 0;
+}
+
+.skills .bar div {
+  background: #6b5b95;
+  height: 100%;
+  border-radius: 4px;
+}
+
+.stat {
+  background: #1c2940;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  padding: 2rem;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.site-footer {
+  background-color:#cea591;
+  color: white;
+  padding: 20px 0;
+  font-family: Arial, sans-serif;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.footer-item h4 {
+  margin-bottom: 5px;
+  font-size: 1rem;
+}
+
+.footer-item a {
+  color: black;
+  text-decoration: none;
+}
+
+.footer-item a:hover {
+  text-decoration: underline;
+}
